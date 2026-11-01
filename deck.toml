@@ -1,0 +1,18 @@
+[package]
+name = "@jennifer/discord"
+version = "0.1.0"
+description = "Post messages to a Discord channel through a webhook"
+license = "LGPL-3.0-only"
+authors = ["mplx <mplx@jennifer-lang.dev>"]
+# net - every message is an HTTP POST through the `http` module. The stock
+#       `jennifer-tiny` has no network driver, so sending needs the default binary.
+capabilities = ["net"]
+keywords = ["discord", "notifications", "webhook", "chat"]
+
+[package.urls]
+deck = "https://raw.githubusercontent.com/jennifer-language/deck-discord/main/deck.toml"
+homepage = "https://github.com/jennifer-language/deck-discord"
+manual = "https://jennifer-language.github.io/deck-discord/"
+
+[engines]
+jennifer = ">=0.25.0"
