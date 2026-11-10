@@ -35,7 +35,7 @@ func answerOne(srv as httpd.Server) {
         method: httpd.method($req),
         path: httpd.path($req),
         contentType: httpd.header($req, "Content-Type"),
-        body: convert.stringFromBytes(httpd.body($req), "utf-8")
+        body: convert.stringFromBytes("utf-8", httpd.body($req))
     };
     if ($seen.path == "/webhook") {
         httpd.respond($req, 204, "");
