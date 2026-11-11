@@ -36,7 +36,7 @@ posts it when `DISCORD_WEBHOOK_URL` is set.
 
 ## Requirements
 
-Jennifer 0.25.0 or newer and network access to Discord. Sending needs the
+Jennifer 0.26.0 or newer and network access to Discord. Sending needs the
 default `jennifer` binary; the stock `jennifer-tiny` has no network driver.
 
 ## Development
